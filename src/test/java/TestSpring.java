@@ -10,6 +10,7 @@ public class TestSpring {
         String source = "spring-config.xml";
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext(source);
         Beans be = (Beans) applicationContext.getBean("beans");
+        be.hello();
         System.out.println(be);
     }
 }
